@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>React App with PHP!</title>
+    <title>React 18 + PHP + Webpack</title>
 </head>
 <body>
     <div id="react-app"></div>
