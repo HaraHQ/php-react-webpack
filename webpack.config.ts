@@ -14,6 +14,13 @@ module.exports = (env: any, argv: any) => {
     module: {
       rules: [
         {
+          test: /\.(png|svg|jpg|jpeg|gif)$/i,
+          type: 'asset/resource',
+          generator: {
+            filename: 'assets/images/[name][ext][query]'
+          }
+        },
+        {
           test: /\.tsx?$/,
           use: 'ts-loader',
           exclude: /node_modules/,
@@ -21,8 +28,8 @@ module.exports = (env: any, argv: any) => {
         {
           test: /\.css$/,
           use: [
-            MiniCssExtractPlugin.loader, // Extract CSS into files
-            'css-loader' // Processes CSS
+            MiniCssExtractPlugin.loader,
+            'css-loader'
           ]
         },
         {
@@ -42,7 +49,7 @@ module.exports = (env: any, argv: any) => {
     },
     plugins: [
       new MiniCssExtractPlugin({
-        filename: 'css/[name].css' // Output CSS to css folder
+        filename: 'css/[name].css'
       }),
       new HtmlWebpackPlugin({
         template: 'src/template.php',
@@ -55,7 +62,7 @@ module.exports = (env: any, argv: any) => {
         directory: path.join(__dirname, 'public'),
       },
       compress: true,
-      port: 3000, // You can change this port
+      port: 3000,
     }
   };
 }
