@@ -1,0 +1,42 @@
+{
+  "name": "php-react-webpack",
+  "version": "0.0.1",
+  "description": "php integration with react uses webpack features",
+  "main": "src/index.ts",
+  "scripts": {
+    "start": "webpack serve --mode development",
+    "build": "webpack --mode production"
+  },
+  "keywords": [
+    "php",
+    "react",
+    "webpack",
+    "harahq"
+  ],
+  "author": "HaraHQ",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.24.4",
+    "@babel/preset-react": "^7.24.1",
+    "@babel/preset-typescript": "^7.24.1",
+    "@types/react": "^18.3.1",
+    "@types/react-dom": "^18.3.0",
+    "babel-loader": "^9.1.3",
+    "css-loader": "^7.1.1",
+    "html-webpack-plugin": "^5.6.0",
+    "mini-css-extract-plugin": "^2.9.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "style-loader": "^4.0.0",
+    "ts-loader": "^9.5.1",
+    "typescript": "^5.4.5",
+    "webpack": "^5.91.0",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^5.0.4"
+  },
+  "dependencies": {
+    "react-router-dom": "^6.23.0",
+    "ts-node": "^10.9.2",
+    "webpack-php-manifest": "^0.0.1"
+  }
+}

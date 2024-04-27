@@ -1,0 +1,21 @@
+{
+    "compilerOptions": {
+      "target": "es5",
+      "module": "esnext",
+      "moduleResolution": "node",
+      "jsx": "react-jsx", // ensure you are using the right JSX transform
+      "esModuleInterop": true,
+      "skipLibCheck": true,
+      "forceConsistentCasingInFileNames": true,
+      "strict": true,
+      "noEmitOnError": true, // Check this: if true, no files are emitted if there are errors.
+      "lib": ["dom", "dom.iterable", "esnext"]
+    },
+    "include": [
+      "src/**/*"
+    ],
+    "exclude": [
+      "node_modules"
+    ]
+  }
+  
