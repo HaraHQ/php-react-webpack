@@ -63,6 +63,7 @@ module.exports = (env: any, argv: any) => {
       },
       compress: true,
       port: 3000,
+      historyApiFallback: true,
     }
   };
 }

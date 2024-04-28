@@ -1,8 +1,26 @@
+import { StrictMode } from "react";
+import {
+    createBrowserRouter,
+    createRoutesFromElements,
+    Route,
+    RouterProvider,
+} from "react-router-dom";
+
+import Home from "./pages";
+import About from "./pages/about";
+
+const router = createBrowserRouter(
+    createRoutesFromElements([
+        <Route path="/" element={<Home />} />,
+        <Route path="about" element={<About />} />,
+    ])
+)
+
 const App = () => {
     return (
-        <div>
-            <h1>Hello World from React!</h1>
-        </div>
+        <StrictMode>
+            <RouterProvider router={router} />
+        </StrictMode>
     )
 }
 
