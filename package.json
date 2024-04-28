@@ -1,6 +1,6 @@
 {
   "name": "php-react-webpack",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "description": "php integration with react uses webpack features",
   "main": "src/index.ts",
   "scripts": {
