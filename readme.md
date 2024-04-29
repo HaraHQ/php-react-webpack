@@ -30,7 +30,10 @@ const router = createBrowserRouter(
 )
 ```
 
-#### 2. REST API
+#### 2. TailwindCSS + PostCSS
+I was adding Tailwind as first option to using better styling to React side, basically you can update the `tailwind.config.ts`, and for PostCSS on `postcss.config.ts`.
+
+#### 3. REST API
 Since this is not Next.js and it's using style of it but this one use PHP.
 
 You can checkout the `public/api/*` folder to see how basic route to return REST JSON API using PHP, then you can try to access the route, for example:
