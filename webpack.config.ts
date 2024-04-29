@@ -28,8 +28,9 @@ module.exports = (env: any, argv: any) => {
         {
           test: /\.css$/,
           use: [
-            MiniCssExtractPlugin.loader,
-            'css-loader'
+            isDevelopment ? 'style-loader' : MiniCssExtractPlugin.loader,
+            'css-loader',
+            'postcss-loader'
           ]
         },
         {
